@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<title>My area kasutamine</title>
+	<meta charset="utf-8"><!--kodeering -->
+	<link rel ="stylesheet" type="text/css" href="kalculator_cssEdit.css">
+</head>
+<body>
+<h1>Valuuta kalkulaator var 1</h1>
+
+    <input type="button" onclick="history.back();" class="b1" value="Tagasi";/>
+<br>
+<br>
+<form name="var1" onclick="return validateForm()" method="post">
+    <label for ="kogus">Sisesta kogus:</label>
+    <input type="number" name="kogus" id="kogus"> euro
+    <br>
+
+    <legend>Vali valuuta:</legend>
+
+    <input type="radio" name="valuuta1" id="dollar" values="dollar" onchange="radioChange(event)">
+    <label for="dollar">Dollar </label>
+    <br>
+    <input type="radio" name="valuuta1" id="rub" values="rub" onchange="radioChange(event)">
+    <label for="rub">Rouble</label>
+    <br>
+    <input type="radio" name="valuuta1" id="kroon" values="kroon" onchange="radioChange(event)">
+    <label for="kroon">Rootsi kroon </label>
+    <br>
+    <input type="radio" name="valuuta1" id="frank" values="frank" onchange="radioChange(event)">
+    <label for="frank">Šveitsi frank </label>
+    <br>
+<div id="vastus">Siia tuleb vastus...</div>
+
+</form>
+<img src="img/mono.jpg" alt="pilt" id="pilt">
+
+<h1>Valuuta kalkulaator var 2</h1>
+<form name="var2">
+    <label for ="kogus2">Sisesta kogus:</label>
+    <input type="number" name="kogus2" id="kogus2"> euro
+    <br>
+    <select name="valuuta2" id="" onchange="selectOptionChange(event)" >
+        <option value=""></option>
+        <option value="dollar">dollar</option>
+        <option value="kroon">Rootsi kroon</option>
+        <option value="frank">Šveitsi frank</option>
+        <option value="rub">Vene rubla</option>
+
+
+
+
+    </select>
+<div id="vastus2">Siia tuleb vastus</div>
+</form>
+<form>
+<h1>Valuuta kalkulaator var 3</h1>
+<label for ="kogus3">Sisesta kogus:</label>
+<input type="number" name="kogus3" id="kogus3"> euro
+<br>
+
+<label for ="valuutanimi">Sisesta valuuta(dollar,rubla,frank,kroon)</label>
+<input type="text" name="valuutanimi" id="valuutanimi" placeholder="Valuuta nimetus">
+<input type="button" onclick="inputCurrencyText()" value="ok">
+<div id="vastus3">Siia tuleb vastus</div>
+</form>
+
+		 <br>
+	<a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png">
+     </a>
+     <a href="https://jigsaw.w3.org/css-validator/check/referer">
+         <img style="border:0;width:88px;height:31px"
+             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+             alt="Valid CSS!" />
+	</a>
+
+<script src="kalkulaator.js"></script>
+</body>
+</html>
