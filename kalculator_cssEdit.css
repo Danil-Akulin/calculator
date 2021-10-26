@@ -1,0 +1,31 @@
+body{
+	color: black;
+	background-color: rgba(88, 88, 74, 0.171);
+	font-family: 'Roboto', sans-serif;
+}
+
+.b1 {
+height:40px;
+width:100px;
+background: rgba(102, 102, 105, 0.336); /* цвет фона */ 
+color: rgb(0, 0, 0); /* Белые буквы */ 
+font-size: 9pt; /* Размер шрифта в пунктах */
+border-radius: 15px;
+
+}
+
+fieldset
+{
+    background-color: #25303e;
+
+
+
+}
+
+legend
+{
+    margin-bottom: 8px;
+    margin-left: 16px;
+
+
+}
